@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import {
   Route,
@@ -11,7 +10,6 @@ import {
 
 import Layout from "./Layout.jsx";
 import About from './components/About/About.jsx';
-import Home from './components/Home/Home.jsx';
 import Skills from './components/Skills/Skills.jsx';
 
 const router = createBrowserRouter(createRoutesFromElements(
