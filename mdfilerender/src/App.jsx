@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import MyInfo from "./assets/MyInfo.md";
 import "./App.css";
@@ -13,9 +13,11 @@ function App() {
   }, []);
 
   return (
-    <>
-      <ReactMarkdown>{markdown}</ReactMarkdown>
-    </>
+    <div className="app-container">
+      <div className="markdown-content">
+        <ReactMarkdown>{markdown}</ReactMarkdown>
+      </div>
+    </div>
   );
 }
 
